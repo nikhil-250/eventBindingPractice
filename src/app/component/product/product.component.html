@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <div class="row ">
+    <div class="col-md-8 offset-2 mb-4">
+      <button class="btn btn-success" (click)="onAdd()">Add Item</button>
+      <button class="btn btn-danger" [disabled]="cardProductNumber === 0" (click)="onRemove()">Remove Item</button>
+
+      <p class="alert alert-info p-4">
+        {{cartProductStatus}}
+      </p>
+
+
+
+      <div class="form-group">
+        <label for="oneWayDataBinding">oneWayDataBinding</label>
+        <input type="text" class="form-control" (keyup)="onSerach($event)">
+      </div>
+      <p class="alert alert-primary">
+        {{searchValue}}
+      </p>
+
+
+
+      <div class="form-group"> 
+        <label for="TwoWayDataBinding">TwoWayDataBinding</label>
+        <input type="text" class="form-control" [(ngModel)] = searchValue2>
+    </div>
+
+    <p class="alert alert-primary">
+        {{searchValue2}}
+    </p>
+
+
+    </div>
+  </div>
+</div>

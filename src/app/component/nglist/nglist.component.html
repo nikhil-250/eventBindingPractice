@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-6 offset-2">
+           <ul class="list-group">
+            <li class="list-group-item" *ngFor="let skills of skillsArray ; let i = index" [ngStyle]="{
+                backgroundColor:'red',
+                color:'white',
+                border:'5px solid gold'
+               }">
+            {{i+1}}   I love {{skills}}
+            </li>
+           </ul>
+        </div>
+    </div>
+</div>

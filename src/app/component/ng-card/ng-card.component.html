@@ -1,0 +1,20 @@
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let skills of cardProp">
+            <div class="card" id="{{skills.id}}">
+              <div class="card-header">
+                <h2 title="{{skills.title}}">{{skills.title}}</h2>
+              </div>
+              <div class="card-body">
+                 {{skills.body}}
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <button class="btn btn-success">Add</button>
+                <button class="btn btn-danger">Delete</button>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
